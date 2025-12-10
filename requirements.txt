@@ -6,3 +6,4 @@ pydantic-settings==2.6.1
 pillow
 numpy
 opencv-python-headless
+ultralytics
