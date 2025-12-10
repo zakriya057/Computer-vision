@@ -14,13 +14,42 @@ computer vision/
 │   │   └── __init__.py
 │   └── utils/
 │       └── __init__.py
+├── docker/
+│   └── Dockerfile
 ├── main.py
 ├── requirements.txt
+├── docker-compose.yml
+├── .dockerignore
 ├── .gitignore
 └── README.md
 ```
 
-## Installation
+## Quick Start with Docker (Recommended)
+
+1. Clone the repository:
+```bash
+git clone git@github.com:zakriya057/Computer-vision.git
+cd "computer vision"
+```
+
+2. Start the application with Docker Compose:
+```bash
+docker compose up
+```
+
+That's it! The API will be available at `http://localhost:8000`
+
+To run in detached mode:
+```bash
+docker compose up -d
+```
+
+To stop the application:
+```bash
+docker compose down
+```
+
+## Manual Installation (Without Docker)
 
 1. Clone the repository:
 ```bash
@@ -41,9 +70,7 @@ venv\Scripts\activate  # On Windows
 pip install -r requirements.txt
 ```
 
-## Running the Application
-
-Start the development server:
+4. Start the development server:
 ```bash
 uvicorn main:app --reload
 ```
